@@ -1,0 +1,64 @@
+<html>
+	<head>
+    	<title>
+	 Patient Information
+	</title>
+    	<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+	<style>
+		back ground {color: blue;}
+		h1   {color: black;}
+		h2   {color: black;}
+		h3   {color: black;}
+		p    {color: black;}
+		c    {color: black;}
+        
+	</style>
+	</headd>
+	<body bgcolor="white">
+		<center><h1>Copay Program</h1></center>
+		<center><h1>Get Card</h1></center><br>
+<center>
+<c>
+<form action="">
+		<h2>Enter the patient's name and address:</h2>
+		<p>* = Required</p>
+		First name: *&nbsp;<input type="text" id="FirstName" name="FirstName" ><br><br>
+		Last name: *&nbsp;<input type="text" id="LastName" name="LastName"><br><br>
+		Address: *&nbsp;<input type="text" id="Address" name="Address"><br><br>
+		City: *&nbsp;<input type="text" id="City" name="City"><br><br>
+		State: *&nbsp;<input type="text" id="State" name="State"><br><br>
+    		Zip Code: *&nbsp;<input type="text" id="Zipcode" name="Zipcode" pattern="[0-9]{5}" title="Five digit code" ><br><br>
+		<label for id="Phone"> Phone (###-###-####): *&nbsp;</label>
+    		<input type="text" id="Phone" name="Zipcode" pattern="[0-9]{10}" title="ten digit number" ><br><br>
+		<p>The copay card will be mailed to this address.</p>
+    
+<input type="button" class="button" value="Back" onclick="myFunction()"> 
+<input type="button" class="button" value="Next" onclick="myFunction()"> 
+
+<script>
+function myFunction() 
+{
+var _date= new Date();
+var x=_date.getTime();
+var _lastName=document.getElementById("LastName").value;
+_lastName=_lastName.substring(0,3);
+_lastName=_lastName.toUpperCase();
+    document.getElementById("button").innerHTML = _lastName + x;
+}
+   
+</script>
+
+<p id="button"></p>
+
+</form>	
+</c>
+<p>In Massachusetts, co-pay assistance is not available for products with certain generic equivalents (for example, any product with an AB-rated generic equivalent).<br><br>
+Available to patients with commercial prescription insurance coverage. This program is not valid for prescriptions reimbursed under Medicare (including Part D), 
+Medicare Advantage, Medicaid, Medigap, Veterans’ Affairs, the Department of Defense, TRICARE, or similar federal, state, or government-funded insurance plans, 
+or where prohibited by law.<br><br>
+The Patient can call 1-800-448-6472 to obtain additional information about this program or to stop participation.</p>
+
+</center>
+<br><br>
+	</body> 
+</html>
