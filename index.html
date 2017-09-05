@@ -1,4 +1,7 @@
 <html>
+<table border="1" width="50%">
+	<tr>
+    	<td>
 	<head>
     	<title>
 	 Patient Information
@@ -9,32 +12,45 @@
 		h1   {color: black;}
 		h2   {color: black;}
 		h3   {color: black;}
-		p    {color: black;}
+		p    {color: black; padding-left: 5px;padding-right: 5px;}
 		c    {color: black;}
         
 	</style>
-	</headd>
+	</head>
 	<body bgcolor="white">
 		<center><h1>Copay Program</h1></center>
 		<center><h1>Get Card</h1></center><br>
-<center>
 <c>
+<div style="width: 100%;">
+   <div style="float:left; width: 100%">
 <form action="">
-		<h2>Enter the patient's name and address:</h2>
-		<p>* = Required</p>
-		First name: *&nbsp;<input type="text" id="FirstName" name="FirstName" ><br><br>
-		Last name: *&nbsp;<input type="text" id="LastName" name="LastName"><br><br>
-		Address: *&nbsp;<input type="text" id="Address" name="Address"><br><br>
-		City: *&nbsp;<input type="text" id="City" name="City"><br><br>
-		State: *&nbsp;<input type="text" id="State" name="State"><br><br>
-    		Zip Code: *&nbsp;<input type="text" id="Zipcode" name="Zipcode" pattern="[0-9]{5}" title="Five digit code" ><br><br>
-		<label for id="Phone"> Phone (###-###-####): *&nbsp;</label>
-    		<input type="text" id="Phone" name="Zipcode" pattern="[0-9]{10}" title="ten digit number" ><br><br>
-		<p>The copay card will be mailed to this address.</p>
-    
-<input type="button" class="button" value="Back" onclick="document.location.href = 'https://demoassistance.github.io/Sample/'"> 
-<input type="button" class="button" value="Next" onclick="document.location.href = 'https://demoassistance.github.io/Card/'"> 
 
+<table>
+		<center><h3>Enter the patient's name and address:</h3></center>
+		<center><p>* = Required</p></center>
+        <tr><center><label for id="FirstName">First name: *</label>
+		&nbsp;&nbsp;<input type="text" id="FirstName" name="FirstName"></center></tr><br>
+        <tr><center><label for id="LastName">Last name: *</label>
+		&nbsp;&nbsp;&nbsp;<input type="text" id="LastName" name="LastName"></center></tr><br>
+        <tr><center><label for id="Address">&nbsp;Address: *</label>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="Address" name="Address"></center></tr><br>
+        <tr><center><label for id="City">&nbsp;City: *</label>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="City" name="City"></center></tr><br>
+        
+       <tr><center><label for id="State">&nbsp;State: *</label>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;<input type="text" id="State" name="State"></center></tr><br>
+        <tr><center><label for id="Zipcode">Zip Code: *</label>
+		&nbsp;&nbsp;&nbsp;
+    		&nbsp;<input type="text" id="Zipcode" name="Zipcode" pattern="[0-9]{5}" title="Five digit code" ></center></tr><br>
+		<tr><center><label for id="Phone"> Phone (###-###-####): *</label>
+        <input type="text" id="Phone" name="Zipcode" pattern="[0-9]{10}" title="ten digit number" ></center></tr><br>
+            </table>
+		<center><p>The copay card will be mailed to this address.</p></center>
+    
+<center><input type="button" class="button" value="Back" onclick="document.location.href = 'https://demoassistance.github.io/Sample/'"> 
+<input type="button" class="button" value="Next" onclick="document.location.href = 'https://demoassistance.github.io/Card/'"> 
+</center>
 <script>
 function myFunction() 
 {
@@ -50,15 +66,16 @@ _lastName=_lastName.toUpperCase();
 
 <p id="button"></p>
 
-</form>	
-</c>
-<p>In Massachusetts, co-pay assistance is not available for products with certain generic equivalents (for example, any product with an AB-rated generic equivalent).<br><br>
+
+<p align="justify">In Massachusetts, co-pay assistance is not available for products with certain generic equivalents (for example, any product with an AB-rated generic equivalent).<br><br>
 Available to patients with commercial prescription insurance coverage. This program is not valid for prescriptions reimbursed under Medicare (including Part D), 
 Medicare Advantage, Medicaid, Medigap, Veterans’ Affairs, the Department of Defense, TRICARE, or similar federal, state, or government-funded insurance plans, 
 or where prohibited by law.<br><br>
 The Patient can call 1-800-448-6472 to obtain additional information about this program or to stop participation.</p>
 
-</center>
-<br><br>
-	</body> 
+</form>	
+   </div>
+      </div>
+</c>
+	</body> </td></tr></table>
 </html>
